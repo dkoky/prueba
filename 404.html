@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>404</title>
     <script type="text/javascript">
-      var redirectTo = window.location.pathname;
-      if (redirectTo.startsWith('/prueba/')) {
-        redirectTo = redirectTo.replace('/prueba', '');
-      }
-      window.location.replace('/prueba' + redirectTo);
+      // Redirigir todas las rutas no existentes a index.html
+      window.location.replace('/prueba/');
     </script>
   </head>
   <body>
