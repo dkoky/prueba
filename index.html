@@ -5,12 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>INEI - CENSOS NACIONALES 2025</title>
     <script type="text/javascript">
-      // Redirige siempre a la ruta base "/prueba/" si no está en la ruta correcta
+      // Forzar redirección si no estamos en la ruta correcta
       if (window.location.pathname !== '/' && !window.location.pathname.startsWith('/prueba/')) {
-        // Forzar la redirección al cargar la página
-        setTimeout(function() {
-          window.location.replace('/prueba/');
-        }, 0); // Redirige inmediatamente
+        window.location.replace('/prueba/');
       }
     </script>
     <script type="module" crossorigin src="./assets/index-c9a374d7.js"></script>
